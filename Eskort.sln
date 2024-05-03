@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3C531A03-996B-4A9E-8A1A-A67BEB865DB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{586DC793-01AA-4535-9972-0EDAA8F4672E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{FDF10B75-C0C1-4A64-9AAC-48E05C775C17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eskort.Services.CouponAPI", "Eskort.Services.CouponAPI\Eskort.Services.CouponAPI.csproj", "{1AC4039A-6844-4726-A0FF-CAEE9499C4BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eskort.Web", "Eskort.Web\Eskort.Web.csproj", "{EB3C7397-D08A-4270-9D30-62FAFC4898D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AC4039A-6844-4726-A0FF-CAEE9499C4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC4039A-6844-4726-A0FF-CAEE9499C4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC4039A-6844-4726-A0FF-CAEE9499C4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC4039A-6844-4726-A0FF-CAEE9499C4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3C7397-D08A-4270-9D30-62FAFC4898D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3C7397-D08A-4270-9D30-62FAFC4898D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3C7397-D08A-4270-9D30-62FAFC4898D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3C7397-D08A-4270-9D30-62FAFC4898D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1AC4039A-6844-4726-A0FF-CAEE9499C4BD} = {3C531A03-996B-4A9E-8A1A-A67BEB865DB6}
+		{EB3C7397-D08A-4270-9D30-62FAFC4898D2} = {FDF10B75-C0C1-4A64-9AAC-48E05C775C17}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81F19090-B81A-4B93-AD8D-5B22BD83FC05}
+	EndGlobalSection
+EndGlobal
