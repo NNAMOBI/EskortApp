@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BwJfMUz38CamDs3nLv+wqmuPewbjpnplsVTe04EFIKY=",
+  "Source": "Eskort.Services.AuthAPI",
+  "BasePath": "_content/Eskort.Services.AuthAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

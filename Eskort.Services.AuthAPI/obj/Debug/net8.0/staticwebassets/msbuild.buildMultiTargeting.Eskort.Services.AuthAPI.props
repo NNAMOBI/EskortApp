@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Eskort.Services.AuthAPI.props" />
+</Project>
