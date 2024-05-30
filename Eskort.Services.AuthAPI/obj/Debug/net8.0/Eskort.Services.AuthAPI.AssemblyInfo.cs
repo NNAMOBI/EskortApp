@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eskort.Services.AuthAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03b299eae03dc5116dbf9d15b6d1fc572b336b83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69c3c3477d03fe03854d1e67a32d1e7ca9e17d1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eskort.Services.AuthAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eskort.Services.AuthAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

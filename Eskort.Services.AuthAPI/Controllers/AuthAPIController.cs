@@ -44,7 +44,7 @@ namespace Eskort.Services.AuthAPI.Controllers
             var loginResponse = await _authRepository.Login(loginReq);
             if(loginResponse.AppUser == null)
             {
-                response.ErrorMessage = "Bad Request! Please check your details and try again";
+                response.ErrorMessage = "Username or Password is incorrect! Please check your details and try again";
                 response.Success = false;
                 return BadRequest(response);
             }

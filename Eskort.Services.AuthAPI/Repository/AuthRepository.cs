@@ -44,7 +44,7 @@ namespace Eskort.Services.AuthAPI.Repository
             var user = _context.AppUsers.FirstOrDefault(u => u.UserName.ToLower() == loginReqDto.Username.ToLower());
 
             bool isValid = await _userManager.CheckPasswordAsync(user, loginReqDto.Password);
-            if(user == null|| isValid) 
+            if(user == null|| !isValid) 
             {
                 return new LoginResponseDto()
                 {
@@ -52,7 +52,9 @@ namespace Eskort.Services.AuthAPI.Repository
                     Token = ""
                 };
             }
-            var token = _jwtTokenGenerator.GenerateToken(user);
+            // GET ALL uSER ROLES
+            var roles = await _userManager.GetRolesAsync(user);
+            var token = _jwtTokenGenerator.GenerateToken(user, roles);
                 AppUserDto appUserDto = new AppUserDto()
                 {
                     Email = user.Email,
