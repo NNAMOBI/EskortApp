@@ -16,7 +16,7 @@ namespace Eskort.Services.AuthAPI.Services
         {
             _jwtOptions = jwtOptions.Value;
         }
-        public string GenerateToken(AppUser appUser)
+        public string GenerateToken(AppUser appUser, IEnumerable<string> roles)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.UTF8.GetBytes(_jwtOptions.Secret);
@@ -28,7 +28,7 @@ namespace Eskort.Services.AuthAPI.Services
                 new Claim(JwtRegisteredClaimNames.Name, appUser.UserName)
             };
 
-
+            claimList.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
             var TokenDescriptor = new SecurityTokenDescriptor
             {
                 Audience = _jwtOptions.Audience,
